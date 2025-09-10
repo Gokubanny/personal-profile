@@ -7,7 +7,10 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    allowedHosts: ["personal-profile-ynjr.onrender.com"],
+  },
+  preview: {
+    host: true,
+    port: 8080,
   },
   plugins: [
     react({
@@ -21,7 +24,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  define: {
-    'process.env': {}
-  }
 }));
