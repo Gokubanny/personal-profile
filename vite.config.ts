@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => ({
   preview: {
     host: true,
     port: 8080,
+    allowedHosts: ["personal-profile-ynjr.onrender.com"] // ← ADD THIS LINE
   },
   plugins: [
     react({
