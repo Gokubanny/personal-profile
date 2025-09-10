@@ -7,12 +7,21 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    allowedHosts: ["personal-profile-ynjr.onrender.com"], // <-- add this
+    allowedHosts: ["personal-profile-ynjr.onrender.com"],
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [
+    react({
+      jsxImportSource: 'react',
+      tsDecorators: true
+    }), 
+    mode === "development" && componentTagger()
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  define: {
+    'process.env': {}
+  }
 }));
