@@ -19,7 +19,7 @@ const Projects = () => {
       title: 'E-Commerce Platform',
       description: 'Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
       image: project2,
-      tags: ['Next.js', 'Node.js', 'PostgreSQL', 'Stripe'],
+      tags: ['Next.js', 'Node.js', 'Stripe'],
       demoUrl: '#',
       githubUrl: '#',
     },

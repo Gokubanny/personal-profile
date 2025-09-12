@@ -30,7 +30,7 @@ const Hero = () => {
               </span>
             </h1>
             <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-200 font-light animate-fade-in-left">
-              Full-Stack Developer & UI/UX Designer
+              Full-Stack Software Developer
             </h2>
           </div>
 

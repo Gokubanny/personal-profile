@@ -11,7 +11,7 @@ const About = () => {
     {
       icon: Database,
       title: 'Backend Development',
-      description: 'Node.js, PostgreSQL, MongoDB',
+      description: 'Node.js, Supabase, MongoDB',
     },
     {
       icon: Globe,
